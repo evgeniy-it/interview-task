@@ -1,6 +1,6 @@
 launch  
 ========================
-cd ./project/web
+cd ./project/web\n
 php index.php
 
 PHP unit starts
