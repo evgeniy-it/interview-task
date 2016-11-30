@@ -12,11 +12,27 @@ class TerminatorTest extends \PHPUnit_Framework_TestCase
     /**
      *  @dataProvider provider
      */
-    public function testTerminator($start, array $actions, $result)
+    public function testExec($start, array $actions, $result)
     {
         $trem = new Terminator();
 
         $this->assertEquals($result, $trem->exec($start, $actions));
+    }
+
+    public function testGetHRStatistic()
+    {
+        $trem = new Terminator();
+        $trem->exec(4, [0,0,0,0,0]);
+
+        $this->assertEquals(2, $trem->getHRStatistic());
+    }
+
+    public function testGetManagerStatistic()
+    {
+        $trem = new Terminator();
+        $trem->exec(1, [1,1,1,1,1]);
+
+        $this->assertEquals(2, $trem->getManagerStatistic());
     }
 
     /**

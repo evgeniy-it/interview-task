@@ -8,6 +8,7 @@ namespace Controller;
 class Terminator implements TerminatorInterface
 {
 
+
     /**
      * @param int   $state
      * @param array $juniorBehavior
@@ -19,5 +20,25 @@ class Terminator implements TerminatorInterface
         // TODO: Implement exec() method.
 
         return "Hello world";
+    }
+
+    /**
+     * Returns the worst feedback amount
+     *
+     * @return int
+     */
+    public function getHRStatistic()
+    {
+        // TODO: Implement getHRStatistic() method.
+    }
+
+    /**
+     * Returns best feedback amount
+     *
+     * @return int
+     */
+    public function getManagerStatistic()
+    {
+        // TODO: Implement getManagerStatistic() method.
     }
 }
