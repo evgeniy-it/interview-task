@@ -1,7 +1,7 @@
 launch  
 ========================
-cd ./project/web\n
-php index.php
+file index.php from  ./project/web
+
 
 PHP unit starts
 ========================
