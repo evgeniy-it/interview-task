@@ -7,8 +7,6 @@ namespace Controller;
  */
 class Terminator implements TerminatorInterface
 {
-
-
     /**
      * @param int   $state
      * @param array $juniorBehavior
